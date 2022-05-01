@@ -8,18 +8,15 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 public class Home {
-
     public static int userChoice = 0;
     public static CompaniesDatabase companiesDatabase = new CompaniesDatabase();
     public static Scanner scannerInput = new Scanner(System.in);
     public static TreeMap<Double, Company>  companiesTreeMap = companiesDatabase.companiesList();
-
     public static StockService stockService = new StockService();
 
     public static void main(String[] args) {
         homeMenu();
     }
-
     public static void homeMenu(){
         do {
             System.out.println("----------------------");
